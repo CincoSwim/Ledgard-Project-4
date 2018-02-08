@@ -15,6 +15,8 @@ public class ConvertToUpper {
             System.out.println("The uppercase equivalent of " + lower + " is " + upper);
         } else if (lower.length() != 1)
             System.out.println("You have entered an incorrect number of characters");
+          else if (lower.matches("[A-Z]"))
+            System.out.println("This letter is already uppercase");
         else
             System.out.println("Not a letter");
     }
