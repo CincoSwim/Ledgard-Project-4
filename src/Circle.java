@@ -19,9 +19,7 @@ public class Circle {
 
             input = JOptionPane.showInputDialog(f, "Enter Y Coordinate:");
             y = Double.parseDouble(input);
-
         }
-
     }
 
     public static class OutputTestTrue {
