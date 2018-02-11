@@ -1,3 +1,5 @@
+import com.sun.jdi.event.MethodExitEvent;
+
 import javax.swing.*;
 
 public class Circle {
@@ -8,44 +10,50 @@ public class Circle {
 
     public static class InputPane {
         JFrame f;
-        InputPane(){
+
+        InputPane() {
             f = new JFrame();
 
-            input = JOptionPane.showInputDialog(f,"Enter X Coordinate:");
+            input = JOptionPane.showInputDialog(f, "Enter X Coordinate:");
             x = Double.parseDouble(input);
 
-            input = JOptionPane.showInputDialog(f,"Enter Y Coordinate:");
+            input = JOptionPane.showInputDialog(f, "Enter Y Coordinate:");
             y = Double.parseDouble(input);
 
         }
 
     }
+
     public static class OutputTestTrue {
         JFrame f;
-        OutputTestTrue(){
+
+        OutputTestTrue() {
             f = new JFrame();
-            JOptionPane.showMessageDialog(f,"Point (" + (int) x + ", " + (int) y + ") is in the circle.","Hooray!", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(f, "Point (" + (int) x + ", " + (int) y + ") is in the circle.", "Hooray!", JOptionPane.WARNING_MESSAGE);
 
         }
     }
+
     public static class OutputTestFalse {
         JFrame f;
-        OutputTestFalse(){
+
+        OutputTestFalse() {
             f = new JFrame();
             f = new JFrame();
-            JOptionPane.showMessageDialog(f,"Point (" + (int) x + ", " + (int) y + ") is not in the circle.","Alert!", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(f, "Point (" + (int) x + ", " + (int) y + ") is not in the circle.", "Alert!", JOptionPane.WARNING_MESSAGE);
 
         }
     }
-    public static void main (String[] args){
-       new InputPane();
 
-       leng = Math.sqrt(Math.pow(x,2) + Math.pow(y,2));
+    public static void main(String[] args) {
+        new InputPane();
 
-       if (leng < 10.0)
-           new OutputTestTrue();
-       else
-           new OutputTestFalse();
+        leng = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+
+        if (leng < 10.0)
+            new OutputTestTrue();
+        else
+            new OutputTestFalse();
 
     }
 }
