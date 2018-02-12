@@ -1,5 +1,9 @@
 import java.util.*;
-
+/*
+Written By Christopher Pucko
+If a user enters a single, lowercase letter of the alphabet, it will convert it to uppercase.
+In any other case, it'll output an error message.
+ */
 public class ConvertToUpper {
     public static void main(String[] args) {
         Scanner keyin = new Scanner(System.in);

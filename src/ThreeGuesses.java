@@ -1,5 +1,9 @@
 import java.util.*;
-
+/*
+Written by Christopher Pucko
+Checks a user input against a secret password, giving a hard limit of 3 guesses.
+This password can be any string value.
+ */
 public class ThreeGuesses {
     public static void main(String[] args) {
         String guesses;

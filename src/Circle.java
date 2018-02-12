@@ -1,5 +1,8 @@
-import com.sun.jdi.event.MethodExitEvent;
-
+/*
+Written by Christopher Pucko
+Uses a GUI interface to enter an (x,y) coordinate.
+Then it checks if the point is within a 10 unit circle.
+ */
 import javax.swing.*;
 
 public class Circle {

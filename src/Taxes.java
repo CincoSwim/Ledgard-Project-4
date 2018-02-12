@@ -1,6 +1,9 @@
 import java.text.DecimalFormat;
 import java.util.*;
-
+/*
+Written by Chris Pucko
+Calculates the amount of tax paid, depending on your net taxable income and tax bracket rates.
+ */
 public class Taxes {
     public static void main(String[] args){
         double netIncome;
